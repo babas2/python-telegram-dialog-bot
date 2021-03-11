@@ -14,7 +14,7 @@ from .items import *
 
 class DialogBot(object):
     def __init__(self, token, generator, handlers=None):
-        self.updater = Updater(token=token)
+        self.updater = Updater(token="1565747586:AAGIeCuyv6UBZea-EwMoTuppSZu1ItSy-gw")
         message_handler = MessageHandler(Filters.text | Filters.command, self.handle_message)
         inline_query_handler = InlineQueryHandler(self.handle_inline_query)
         self.updater.dispatcher.add_handler(message_handler)
